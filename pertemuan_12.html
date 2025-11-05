@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 12: Model Kooperatif (PAUD)</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-sky-50 text-gray-800">
+
+    <!-- Kontainer Utama -->
+    <div class="container mx-auto max-w-5xl p-4 md:p-8">
+
+        <!-- Header Utama -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-sky-800">Metode dan Model Pembelajaran (PAUD)</h1>
+            <h2 class="text-2xl font-semibold text-sky-600 mt-2">Pertemuan 12: Model Pembelajaran Kooperatif (TPS, NHT, TGT)</h2>
+            <p class="text-lg text-gray-600 mt-4">
+                Selamat datang kembali, rekan-rekan mahasiswa! Hari ini kita akan beralih dari teknologi dan fokus pada inti dari interaksi manusia: kerja sama. Bagaimana kita secara sistematis mengajar anak-anak untuk belajar *bersama*?
+            </p>
+        </header>
+
+        <!-- Tujuan Pembelajaran -->
+        <section class="bg-white p-6 rounded-xl shadow-lg mb-8 border border-sky-200">
+            <div class="flex items-center mb-4">
+                <!-- Ikon Target -->
+                <svg class="h-8 w-8 text-sky-700 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6c.778.32 1.6.32 2.38.003A8.287 8.287 0 0015.362 5.214z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 00-2.133-1A3.75 3.75 0 0012 18z" />
+                </svg>
+                <h3 class="text-2xl font-bold text-sky-800">Tujuan Pembelajaran</h3>
+            </div>
+            <p class="mb-4 text-gray-700">Setelah mengikuti perkuliahan ini, Anda (mahasiswa) diharapkan mampu:</p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                <li>Menjelaskan konsep dasar dan prinsip pembelajaran kooperatif.</li>
+                <li>Mengidentifikasi sintaks/langkah-langkah model <strong>Think-Pair-Share (TPS)</strong>.</li>
+                <li>Mengidentifikasi sintaks/langkah-langkah model <strong>Numbered Heads Together (NHT)</strong>.</li>
+                <li>Mengidentifikasi sintaks/langkah-langkah model <strong>Teams-Games-Tournament (TGT)</strong>.</li>
+                <li>Menganalisis adaptasi dan penerapan ketiga model ini dalam konteks kelas PAUD.</li>
+            </ol>
+        </section>
+
+        <!-- Apersepsi -->
+        <section class="bg-white p-6 rounded-xl shadow-lg mb-8">
+            <div class="flex items-center mb-4">
+                <!-- Ikon Ide/Lampu -->
+                <svg class="h-8 w-8 text-yellow-500 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a.75.75 0 00.75-.75V8.668a1.875 1.875 0 011.02-1.732.5.5 0 00.04-.802l-1.1-1.65a.5.5 0 00-.83.332V5.25a.75.75 0 00-1.5 0v.75a.5.5 0 00.83.332l1.1 1.65a.5.5 0 00-.04.802A1.875 1.875 0 0111.25 8.668V17.25a.75.75 0 00.75.75z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a.75.75 0 01-.75-.75v-.01a.75.75 0 011.5 0v.01a.75.75 0 01-.75.75zM12 3a.75.75 0 01-.75-.75v-.01a.75.75 0 011.5 0v.01a.75.75 0 01-.75.75zM8.25 12a.75.75 0 01-.75.75H5.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM15.75 12a.75.75 0 01.75.75h2.25a.75.75 0 010-1.5h-2.25a.75.75 0 01-.75.75z" />
+                </svg>
+                <h3 class="text-2xl font-bold text-sky-800">Apersepsi: "Ayo Main Sama-Sama!"</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+                Anda pasti pernah melihat ini di kelas: Anda membagi anak dalam kelompok untuk membuat menara balok. Apa yang terjadi?
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 mt-4 pl-4">
+                <li>Satu anak (dominan) mengambil alih dan mengerjakan semuanya.</li>
+                <li>Dua anak asyik bermain sendiri dengan balok yang berbeda (paralel).</li>
+                <li>Satu anak pemalu hanya menonton dan tidak menyentuh balok sama sekali.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mt-4 bg-sky-100 p-4 rounded-lg">
+                Pertanyaannya: Bagaimana kita mengubah "kerja kelompok" (di mana anak-anak hanya duduk berdekatan) menjadi "pembelajaran kooperatif" (di mana mereka benar-benar saling membutuhkan untuk berhasil)? Hari ini kita akan belajar 3 model terstruktur untuk melakukan hal itu.
+            </p>
+        </section>
+
+        <!-- Materi Awal -->
+        <section class="bg-white p-6 rounded-xl shadow-lg mb-8">
+            <div class="flex items-center mb-4">
+                <!-- Ikon Buku -->
+                <svg class="h-8 w-8 text-sky-700 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" />
+                </svg>
+                <h3 class="text-2xl font-bold text-sky-800">Materi Awal: Hakikat Pembelajaran Kooperatif</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-3">
+                Pembelajaran Kooperatif <strong>bukan</strong> sekadar "kerja kelompok". Menurut Johnson & Johnson, ini adalah model pembelajaran terstruktur yang memiliki 5 elemen penting:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-sky-100 p-3 rounded-lg"><strong>1. Saling Ketergantungan Positif:</strong> "Kita tenggelam atau berenang bersama." Sukses individu bergantung pada sukses kelompok.</div>
+                <div class="bg-sky-100 p-3 rounded-lg"><strong>2. Akuntabilitas Individu:</strong> Setiap anggota harus berkontribusi dan menguasai materi. Tidak ada yang "nebeng".</div>
+                <div class="bg-sky-100 p-3 rounded-lg"><strong>3. Interaksi Tatap Muka:</strong> Anak-anak didorong untuk saling membantu, berdiskusi, dan memuji.</div>
+                <div class="bg-sky-100 p-3 rounded-lg"><strong>4. Keterampilan Sosial:</strong> Guru secara eksplisit mengajarkan cara mendengarkan, memberi kritik, dan menghargai pendapat.</div>
+                <div class="bg-sky-100 p-3 rounded-lg"><strong>5. Pemrosesan Kelompok:</strong> Kelompok mengevaluasi: "Apa yang sudah baik?" dan "Apa yang perlu diperbaiki?"</div>
+            </div>
+            <p class="text-gray-700 leading-relaxed mt-4 p-4 bg-yellow-100 border-l-4 border-yellow-400 rounded-lg">
+                <strong>Untuk PAUD:</strong> Ini adalah fondasi! Tujuan utama PAUD adalah mengembangkan keterampilan sosial-emosional. Model kooperatif adalah cara terbaik untuk melatih keterampilan tersebut secara otentik.
+            </p>
+        </section>
+
+        <!-- Materi Inti -->
+        <section class="mb-8">
+            <div class="flex items-center mb-4">
+                <!-- Ikon ... -->
+                <svg class="h-8 w-8 text-sky-700 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.665 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75c0-.232-.035-.455-.1-.665m-5.801 0A48.421 48.421 0 0 1 6 3.75c-1.135 0-2.192.114-3.21.321m3.21 13.618c-1.017.207-2.076.321-3.21.321-1.135 0-2.192-.114-3.21-.321m9.63-13.33a48.42 48.42 0 0 1-3.21.321A48.414 48.414 0 0 1 6 3.75m6.168 13.618c.346.069.694.128 1.042.175m-.235 0a48.4 48.4 0 0 0 4.368 0m-4.368 0a48.385 48.385 0 0 1-1.042-.175" />
+                </svg>
+                <h3 class="text-2xl font-bold text-sky-800">Materi Inti: 3 Model Kooperatif Populer</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                <!-- 1. TPS -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col">
+                    <h4 class="text-xl font-bold text-sky-700 mb-3">1. Think-Pair-Share (TPS)</h4>
+                    <p class="text-gray-700 mb-4">Model paling sederhana dan aman untuk mendorong semua anak (terutama yang pemalu) untuk berbicara.</p>
+                    <h5 class="font-semibold text-gray-800 mb-2">Sintaks / Langkah-langkah:</h5>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700 mb-4 flex-grow">
+                        <li><strong>THINK (Berpikir):</strong> Guru memberikan pertanyaan (misal: "Kira-kira, kenapa ya daun warnanya hijau?"). Anak-anak diminta berpikir SENDIRI (diam) selama 10-30 detik.</li>
+                        <li><strong>PAIR (Berpasangan):</strong> Guru meminta anak berpasangan dengan teman sebelahnya. "Sekarang, coba ceritakan jawabanmu ke temanmu."</li>
+                        <li><strong>SHARE (Berbagi):</strong> Guru memanggil beberapa *pasangan* (bukan individu) untuk berbagi di depan kelas. "Kira-kira, tadi Budi dan Ani ngobrolin apa? Coba ceritakan."</li>
+                    </ol>
+                    <blockquote class="bg-sky-100 p-3 rounded-lg border-l-4 border-sky-400 text-sm">
+                        <strong>Adaptasi PAUD:</strong> Gunakan pertanyaan visual atau berbasis cerita. Tahap "Think" harus singkat. Ini sangat baik untuk melatih *turn-taking* (bergiliran bicara) dan mendengarkan.
+                    </blockquote>
+                </div>
+
+                <!-- 2. NHT -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col">
+                    <h4 class="text-xl font-bold text-sky-700 mb-3">2. Numbered Heads Together (NHT)</h4>
+                    <p class="text-gray-700 mb-4">Model yang dirancang untuk memastikan akuntabilitas setiap anggota kelompok. "Kepala yang Bernomor".</p>
+                    <h5 class="font-semibold text-gray-800 mb-2">Sintaks / Langkah-langkah:</h5>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700 mb-4 flex-grow">
+                        <li><strong>NUMBERING (Penomoran):</strong> Anak dibagi kelompok (3-4 anak). Setiap anak di kelompok dapat nomor (misal: 1, 2, 3, 4).</li>
+                        <li><strong>QUESTION (Pertanyaan):</strong> Guru memberi tugas. (misal: "Cari 3 benda di kelas yang bisa tenggelam").</li>
+                        <li><strong>HEADS TOGETHER (Menyatukan Kepala):</strong> Anak-anak berdiskusi di kelompok. Guru memastikan SEMUA anak tahu jawabannya.</li>
+                        <li><strong>ANSWER (Jawaban):</strong> Guru memanggil satu nomor secara acak. "Semua anak nomor 2, silakan berdiri dan sebutkan jawabannya!"</li>
+                    </ol>
+                    <blockquote class="bg-sky-100 p-3 rounded-lg border-l-4 border-sky-400 text-sm">
+                        <strong>Adaptasi PAUD:</strong> Gunakan nomor visual (kalung angka, topi warna, gambar hewan). Kelompok harus kecil. Guru harus aktif memfasilitasi "Heads Together" agar tidak ada yang pasif.
+                    </blockquote>
+                </div>
+                
+                <!-- 3. TGT -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col">
+                    <h4 class="text-xl font-bold text-sky-700 mb-3">3. Teams-Games-Tournament (TGT)</h4>
+                    <p class="text-gray-700 mb-4">Model berenergi tinggi yang menggunakan permainan dan kompetisi persahabatan untuk memotivasi.</p>
+                    <h5 class="font-semibold text-gray-800 mb-2">Sintaks / Langkah-langkah:</h5>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700 mb-4 flex-grow">
+                        <li><strong>TEAMS (Tim):</strong> Anak dibagi dalam kelompok heterogen (seperti NHT).</li>
+                        <li><strong>GAMES (Permainan):</strong> Guru menyajikan materi/keterampilan (misal: membilang 1-10).</li>
+                        <li><strong>TOURNAMENT (Turnamen):</strong> Anak-anak berkompetisi di "meja turnamen" mewakili timnya. Mereka bermain melawan anak dari tim lain yang kemampuannya *setara*.</li>
+                        <li><strong>RECOGNITION (Penghargaan):</strong> Poin dari turnamen dikumpulkan. Penghargaan diberikan kepada TIM (bukan individu) yang berkinerja baik.</li>
+                    </ol>
+                    <blockquote class="bg-red-100 p-3 rounded-lg border-l-4 border-red-400 text-sm">
+                        <strong>Adaptasi PAUD (PENTING!):</strong> Hati-hati dengan "kompetisi". Ganti "Turnamen" dengan "Permainan Seru". Fokusnya bukan menang-kalah, tapi "bermain seru bersama". Penghargaan tim harus bersifat non-materiil (misal: "Tim Hebat" boleh memimpin barisan).
+                    </blockquote>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Materi Penutup -->
+        <section class="bg-white p-6 rounded-xl shadow-lg mb-8">
+            <div class="flex items-center mb-4">
+                <!-- Ikon Bendera Finish -->
+                <svg class="h-8 w-8 text-sky-700 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 6.75v1.5M3 12v1.5M3 17.25v1.5M3 21v-1.5M21 3v1.5M21 6.75v1.5M21 12v1.5M21 17.25v1.5M21 21v-1.5M12 3v1.5M12 6.75v1.5M12 17.25v1.5M12 21v-1.5M4.5 9h15M4.5 15h15" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v-1.5" />
+                </svg>
+                <h3 class="text-2xl font-bold text-sky-800">Materi Penutup: Kooperasi vs Kompetisi</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-3">
+                Ketiga model ini (TPS, NHT, TGT) memberikan kita **struktur** untuk mengajarkan keterampilan sosial.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 pl-4">
+                <li><strong>TPS</strong> sangat baik untuk memulai, karena paling aman dan melatih semua anak berbicara.</li>
+                <li><strong>NHT</strong> sangat baik untuk akuntabilitas, memastikan tidak ada anak yang "bersembunyi".</li>
+                <li><strong>TGT</strong> sangat memotivasi, TAPI harus diadaptasi dengan hati-hati di PAUD agar fokusnya tetap pada kolaborasi tim dan keseruan (fun), bukan pada siapa yang menang atau kalah.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                Peran Anda sebagai guru PAUD adalah menjadi fasilitator yang cermat, yang tidak hanya merancang aktivitas, tetapi juga secara aktif mengajarkan "cara bermain bersama" selama proses tersebut.
+            </p>
+        </section>
+
+        <!-- Refleksi Akhir Pertemuan -->
+        <section class="bg-gray-800 text-white p-6 rounded-xl shadow-lg mb-8">
+            <div class="flex items-center mb-4">
+                <!-- Ikon Refleksi/Pesan -->
+                <svg class="h-8 w-8 text-sky-400 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zM12 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zM15.375 12a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12c0-5.03 4.07-9.106 9.106-9.106s9.106 4.076 9.106 9.106c0 5.03-4.07 9.106-9.106 9.106A9.106 9.106 0 012.25 12z" />
+                </svg>
+                <h3 class="text-2xl font-bold text-white">Refleksi Akhir Pertemuan</h3>
+            </div>
+            <p class="text-gray-300 mb-4">
+                Mari kita renungkan materi hari ini. Silakan tulis jawaban Anda di forum diskusi kita:
+            </p>
+            <ol class="list-decimal list-inside space-y-3 text-gray-200">
+                <li>Model mana (TPS, NHT, atau TGT) yang menurut Anda paling <strong>mudah</strong> diterapkan di kelas PAUD? Mengapa?</li>
+                <li>Model mana yang menurut Anda paling <strong>menantang</strong>? Apa kekhawatiran terbesar Anda dalam menerapkannya?</li>
+                <li>Coba buat <strong>satu pertanyaan "THINK"</strong> (untuk model TPS) yang cocok untuk anak usia 5 tahun dengan tema "Air, Udara, Api".</li>
+            </ol>
+            <p class="text-sky-300 leading-relaxed mt-6">
+                Terima kasih atas partisipasi Anda. Sampai jumpa minggu depan, di mana kita akan membahas model pembelajaran lainnya!
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 mb-4">
+            <p class="text-sm text-gray-500">&copy; 2025 | Mata Kuliah Metode dan Model Pembelajaran | Program Studi PAUD</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
